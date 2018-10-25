@@ -32,7 +32,7 @@ module.exports = (filename, opts) => {
 		for (let i = 0; i < textArray.length; i++) {
 			if (textArray[i] !== '') {
 				const property = textArray[i].split(/:(.+)/);
-				if (property.length > 0) {
+				if (property.length > 1) {
 					parsed[camel(property[0].trim())] = property[1].trim();
 				}
 			}
