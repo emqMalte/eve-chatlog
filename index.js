@@ -74,9 +74,9 @@ module.exports = (filename, opts) => {
 	}
 
 	// Check magic number
-	if (buff.indexOf(magicNumber) === -1) {
-		throw new TypeError('Invalid file format');
-	}
+	// if (buff.indexOf(magicNumber) === -1) {
+	// 	throw new TypeError('Invalid file format');
+	// }
 
 	// Find header position in buffer
 	const headerPosition = {};
